@@ -1,0 +1,47 @@
+//Clonar
+git clone "Url del repositorio a clonar sin comillas"
+
+//Ver si hay cambios no guardados
+git status
+
+//Restaurar a la ultima version guardada
+git restore .
+
+//Crear una nueva rama local (develop se suele usar) ejemplo develop/juank
+git checkout -b "nombre de rama sin comillas"
+
+//Guardar todos los cambios locales, fijarse cuando sale untracked
+git add .
+
+//Hacer el commit 
+NEW: Nuevo aunque sea un archivo vacio
+UPDATE: Actualizacion aunque sea una sola coma
+DELETE: Delete aunque sea un archivo vacio
+FIX: Cuando se arregla algo inservible
+
+git commit -m "Mensaje dentro de las comillas"
+git commit -m "NEW - UPDATE: ExplicacionNew - ExplicacionUpdate"
+
+//cambiar de ramas
+git checkout "Nombre de la rama sin comillas"
+
+//Combinar cambios de ramas (Posicionarse en la rama en la cual desea combinar)
+git merge "Nombre de la rama con la cual desea combinar sin comillas"
+
+//subir todo en otra rama
+git push origin "nombre de la rama que deseo subir"
+
+//Traer lo que hay en otra rama (Posicionarse en la rama en la cual queremos agregar datos)
+git pull origin "La rama de la que queremos obtener"
+
+//Predeterminar una rama para subir (Si no existe la crea)
+git push -u origin "Nombre de la rama que queremos predeterminar sin comillas"
+
+//Subir todos los cambios a la rama predeterminada(Funciona con la anterior)
+git push
+
+//Predeterminar una rama para obtener
+git pull -u origin "Nombre de la rama que queremos predeterminar sin comillas"
+
+//traer directamente de la rama predeterminada (Esta funciona con la anterior)
+git pull
